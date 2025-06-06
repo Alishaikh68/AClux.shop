@@ -1,0 +1,146 @@
+database = acluxshop 
+	table = orders
+		CREATE TABLE orders (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+   		product_name VARCHAR(50),
+    		customer_name VARCHAR(50),
+    		addresss VARCHAR(50),
+    		phone VARCHAR(10),
+    		quantity INT(10),
+    		total_price INT(10),
+    		payment_method VARCHAR(50)
+		);
+	
+	table = users
+		CREATE TABLE users (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+   	 	username VARCHAR(50),
+    		password VARCHAR(50)
+		);
+-----------------------------------------------------------------------------------------------
+
+database = aclux.indianfoodes 
+	table = cart
+		CREATE TABLE cart (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+    		name VARCHAR(50),
+    		price INT(10),
+    		image VARCHAR(500),
+    		quantity INT(10)
+		);
+
+	table = order
+		CREATE TABLE order (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+    		name VARCHAR(50),
+    		number VARCHAR(10),
+    		email VARCHAR(50),
+    		method VARCHAR(50),
+    		flat VARCHAR(50),
+    		street VARCHAR(50),
+    		city VARCHAR(50),
+    		state VARCHAR(50),
+    		country VARCHAR(50),
+    		pin_code INT(10),
+    		total_products VARCHAR(50),
+    		total_price INT(50)
+		);
+
+	table = products
+		CREATE TABLE products (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+   		name VARCHAR(50),
+    		price INT(50),
+    		image VARCHAR(500)
+		);
+
+-----------------------------------------------------------------------------------------------
+
+database = aclux.vegitables
+	table = cart
+		CREATE TABLE cart (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+    		name VARCHAR(50),
+    		price INT(10),
+    		image VARCHAR(500),
+    		quantity INT(10)
+		);
+
+	table = order
+		CREATE TABLE order (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+    		name VARCHAR(50),
+    		number VARCHAR(10),
+    		email VARCHAR(50),
+    		method VARCHAR(50),
+    		flat VARCHAR(50),
+    		street VARCHAR(50),
+    		city VARCHAR(50),
+    		state VARCHAR(50),
+    		country VARCHAR(50),
+    		pin_code INT(10),
+    		total_products VARCHAR(50),
+    		total_price INT(50)
+		);
+
+	table = products
+		CREATE TABLE products (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+   		name VARCHAR(50),
+    		price INT(50),
+    		image VARCHAR(500)
+		);
+
+-----------------------------------------------------------------------------------------------
+
+database = acluxfoodies
+	table = cart
+		CREATE TABLE cart (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+    		name VARCHAR(50),
+    		price INT(10),
+    		image VARCHAR(500),
+    		quantity INT(10)
+		);
+
+	table = order
+		CREATE TABLE order (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+    		name VARCHAR(50),
+    		number VARCHAR(10),
+    		email VARCHAR(50),
+    		method VARCHAR(50),
+    		flat VARCHAR(50),
+    		street VARCHAR(50),
+    		city VARCHAR(50),
+    		state VARCHAR(50),
+    		country VARCHAR(50),
+    		pin_code INT(10),
+    		total_products VARCHAR(50),
+    		total_price INT(50)
+		);
+
+	table = products
+		CREATE TABLE products (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+   		name VARCHAR(50),
+    		price INT(50),
+    		image VARCHAR(500)
+		);
+
+	table = users
+		CREATE TABLE users (
+    		id INT AUTO_INCREMENT PRIMARY KEY,
+   	 	username VARCHAR(50),
+    		password VARCHAR(50)
+		);
+
+=================================================================end==============================================================
+
+
+
+
+
+
+
+

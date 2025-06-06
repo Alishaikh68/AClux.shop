@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionProducts</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: inline-block;
+        } 
+        .header {
+            text-align: center;
+            padding:none;
+        }
+        .NavLog {
+            display: flex;
+            justify-content: right;
+            background-color: #300303;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .NavLog a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        .NavLog a:hover {
+            background-color: #555;
+        }  
+        #Shoop {
+            margin-left: 35%;
+            padding: 0%;
+            float: center;
+            width: 25%;
+        } 
+        .logsin {
+            float: right;
+        }
+        .navigation {
+           
+            justify-content: left;
+            background-color: #300303;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 20px;
+            transition: all 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #555;
+        }   
+        
+        .tech-products {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .tech-products:hover {
+            transform: translateY(-10px);
+        }
+        .tech-products img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .tech-products p{
+            font-size: small;
+        }
+        .tech-products .order-button {
+           
+          
+            background-color: rgb(160, 108, 12);
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            text-decoration: none; 
+            display: inline-block; 
+            display: none;
+            cursor: pointer;
+            transition: opacity 0.3s ease
+        } 
+    .tech-products:hover .order-button {
+        display: block;
+    }
+        
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #300303;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .tech-section {
+            background-image: url('image/backmain.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navigation">
+        <a href="index.php" id = "home" >Home</a>
+        <a href="menue.php">Category</a>
+        <div class="logsin">
+        <a class="LOG" href="login.html">Login</a>
+        <a class="Sin" href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <nav class="NavLog">
+           
+            <div>
+                <img src="image\Welcome.png" id="Shoop" alt="LOgo"
+            </div>
+            
+    </nav>
+    
+       
+
+    <header class="header">
+        <div class="container">
+            <h3>Fashion Products</h3>
+            <p>Available Category's </p>
+        </div>
+    </header>
+
+
+    <section class="tech-section">
+        <div class="container">
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi1.jpg" alt="image">
+                <h5>Fossil Flynn Analog Black Wacth<br><h1>Price:11996</h1></h5>
+                <p>Fossil Flynn Analog Black Wacth</p>
+                <a href="order.php?product='Fossil Flynn Analog Black Wacth'&Price=11996" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi2.jpg" alt="image">
+                <h5>Benyar Automatic Mechanucal Analog Black Wacth<br><h1>Price:4290</h1></h5>
+                <p>Benyar Automatic Mechanucal Analog Black Wacth</p>
+                <a href="order.php?product='Benyar Automatic Mechanucal Analog Black Wacth'&Price=4290" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi3.jpg" alt="image">
+                <h5>ASIAN Men's TARZAN-11 shoes <br><h1>Price:899</h1></h5>
+                <p>ASIAN Men's TARZAN-11 shoes</p>
+                <a href="order.php?product='ASIAN Men's TARZAN-11 shoes'&Price=899" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi4.jpg" alt="image">
+                <h5>Liberty ,mens Lpmxt-800 Clog Footwear<br><h1>Price:599</h1></h5>
+                <p>Liberty ,mens Lpmxt-800 Clog Footwear</p>
+                <a href="order.php?product='Liberty ,mens Lpmxt-800 Clog Footwear'&Price=599" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi5.jpg" alt="image">
+                <h5>Lavie, Women's Nova Tote Bag <br><h1>Price:899</h1></h5>
+                <p>Women's Nova Tote Bag,Women's Nova Tote HadBag</p>
+                <a href="order.php?product='Lavie, Women's Nova Tote Bag'&Price=899" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi6.jpg" alt="image">
+                <h5>Lavie, Women's Marma Domenox Tote Bag<br><h1>Price:799</h1></h5>
+                <p>Women's Marma Domenox Tote Bag,Lavie, Women's Nova Tote Bag</p>
+                <a href="order.php?product='Lavie, Women's Marma Domenox Tote Bag'&Price=799" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi7.jpg" alt="image">
+                <h5>Veirdo Oversized Baggy Fit T-shirt<br><h1>Price:452</h1></h5>
+                <p>Veirdo Oversized Baggy Fit T-shirt,men T-Shirt</p>
+                <a href="order.php?product='Veirdo Oversized Baggy Fit T-shirt'&Price=452" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fashi/Fashi8.jpg" alt="image">
+                <h5>Veirdo Oversized Baggy Fit T-shirt<br><h1>Price:460</h1></h5>
+                <p>Veirdo Oversized Baggy Fit T-shirt,men T-Shirt</p>
+                <a href="order.php?product='Veirdo Oversized Baggy Fit T-shirt'&Price=460" class="order-button">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        &copy; 2024 AClux.shop</p>
+    </footer>
+
+</body>
+
+</html>

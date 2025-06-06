@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnicalProducts</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: inline-block;
+        } 
+        .header {
+            text-align: center;
+            padding:none;
+        }
+        .NavLog {
+            display: flex;
+            justify-content: right;
+            background-color: #300303;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .NavLog a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        .NavLog a:hover {
+            background-color: #555;
+        }  
+        #Shoop {
+            margin-left: 35%;
+            padding: 0%;
+            float: center;
+            width: 25%;
+        } 
+        .logsin {
+            float: right;
+        }
+        .navigation {
+           
+            justify-content: left;
+            background-color: #300303;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 20px;
+            transition: all 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #555;
+        }   
+        .tech-products p{
+            font-size: small;
+        }
+        
+        .tech-products {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .tech-products:hover {
+            transform: translateY(-10px);
+        }
+        .tech-products img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .tech-products .order-button {
+           
+          
+            background-color: rgb(160, 108, 12);
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            text-decoration: none; 
+            display: inline-block; 
+            display: none;
+            cursor: pointer;
+            transition: opacity 0.3s ease
+        } 
+        .tech-products:hover .order-button {
+        display: block;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #300303;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .tech-section {
+            background-image: url('image/backmain.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navigation">
+        <a href="index.php" id = "home" >Home</a>
+        <a href="menue.php">Category</a>
+        <div class="logsin">
+        <a class="LOG" href="login.html">Login</a>
+        <a class="Sin" href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <nav class="NavLog">
+           
+            <div>
+                <img src="image\Welcome.png" id="Shoop" alt="LOgo"
+            </div>
+            
+    </nav>
+    
+       
+
+    <header class="header">
+        <div class="container">
+            <h3>Technical Products</h3>
+            <p>Available Category's </p>
+        </div>
+    </header>
+
+
+    <section class="tech-section">
+        <div class="container">
+            <div class="tech-products">
+                <img src="image\Tech\tech1.png" alt="image">
+                <h5>QuadroTower Seamless Multi-tasker (4 x USB Ports)<br><h1>Price:3799</h1></h5>
+                <p>The right PC Case is must for your custom computer build. Presenting FINGERS QuadroTower Fashion PC Case </p>
+                <a href="order.php?product='QuadroTower Seamless Multi-tasker (4 x USB Ports)'&Price=3799" class="order-button">Order Now</a>
+                
+            </div>
+            
+
+            <div class="tech-products">
+                <img src="image\Tech\tech2.jpg" alt="image">
+                <h5>MSI NVIDIA Geforce GTX 970 Gaming 4 GB GDDR5 Graphics Card(Black, Red)<br><h1>Price:39359</h1></h5>
+                <p>Chipset: NVIDIA,Graphics Engine: Geforce GTX 970 Gaming,Memory Interface 256 bit</p>
+                <a href="order.php?product='MSI NVIDIA Geforce GTX 970 Gaming 4 GB GDDR5 Graphics Card(Black, Red)'&Price=39359" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image\Tech\tech3.jpg" alt="imaige">
+                <h5>Acer EK220Q 21.5 Inch Full HD VA Panel Backlit LED Monitor<br><h1>Price:8299</h1></h5>
+                <p>(Refurbished) Acer EK220Q 21.5 Inch Full HD VA Panel Backlit LED Monitor I 250 Nits I HDMI and VGA Ports Acer EK220Q 21.5</p>
+                <a href="order.php?product='Acer EK220Q 21.5 Inch Full HD VA Panel Backlit LED Monitor'&Price=8299" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image\Tech\tech4.jpg" alt="imaige">
+                <h5>TVS CHAMP HD Wired USB Desktop Keyboard(Black)<br><h1>Price:899</h1></h5>
+                <p>TVS CHAMP HD Wired USB Desktop Keyboard(Black)</p>
+                <a href="order.php?product='TVS CHAMP HD Wired USB Desktop Keyboard(Black)'&Price=899" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image\Tech\tech5.jpg" alt="imaige">
+                <h5>HP X900 USB Mouse(Black)<br><h1>Price:340</h1></h5>
+                <p>HP X900 USB Mouse(Black) , USB Mouse (Black)</p>
+                <a href="order.php?product='HP X900 USB Mouse(Black)'&Price=340 " class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image\Tech\tech6.png" alt="imaige">
+                <h5>ROG Flow X16 (2022) GV601<br><h1>Price:294990</h1></h5>
+                <p>ROG Flow X16 (2022) GV601,Mini LED Technology,Leading OLED Panels With G-SYNC Support</p>
+                <a href="order.php?product='ROG Flow X16 (2022) GV601'&Price=294990" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image\Tech\tech7.jpg" alt="imaige">
+                <h5>Apple AirPods 2<br><h1>Price:14900</h1></h5>
+                <p>Apple AirPods 2,AirPods with Charging Case: More than 24 hours listening time</p>
+                <a href="order.php?product='Apple AirPods 2'&Price=14900" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image\Tech\tech8.png" alt="imaige">
+                <h5>Sennheiser HD 4.50 BT Wireless Headphones(Black)<br><h1>Price:14990</h1></h5>
+                <p>Sennheiser HD 4.50 BT NC Bluetooth Wireless Over Ear Headphones with Mic (Black)</p>
+                <a href="order.php?product='Sennheiser HD 4.50 BT Wireless Headphones(Black)'&Price=14990" class="order-button">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        &copy; 2024 AClux.shop</p>
+    </footer>
+
+</body>
+
+</html>

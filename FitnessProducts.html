@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessProducts</title> 
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: inline-block;
+        } 
+        .header {
+            text-align: center;
+            padding:none;
+        }
+        .NavLog {
+            display: flex;
+            justify-content: right;
+            background-color: #300303;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .NavLog a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        .NavLog a:hover {
+            background-color: #555;
+        }  
+        #Shoop {
+            margin-left: 35%;
+            padding: 0%;
+            float: center;
+            width: 25%;
+        } 
+        .logsin {
+            float: right;
+        }
+        .navigation {
+           
+            justify-content: left;
+            background-color: #300303;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 20px;
+            transition: all 0.3s ease;
+        }
+        .navigation a:hover {
+            background-color: #555;
+        }   
+        
+        .tech-products {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+        .tech-products p{
+            font-size: small;
+        }
+        .tech-products:hover {
+            transform: translateY(-10px);
+        }
+        .tech-products img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .tech-products .order-button {
+           
+          
+            background-color: rgb(160, 108, 12);
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            text-decoration: none; 
+            display: inline-block; 
+            display: none;
+            cursor: pointer;
+            transition: opacity 0.3s ease
+        } 
+         .tech-products:hover .order-button {
+        display: block;
+         }
+        
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #300303;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .tech-section {
+            background-image: url('image/backmain.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navigation">
+        <a href="index.php" id = "home" >Home</a>
+        <a href="menue.php">Category</a>
+        <div class="logsin">
+        <a class="LOG" href="login.html">Login</a>
+        <a class="Sin" href="signup.html">Sign Up</a>
+        </div>
+    </div>
+    <nav class="NavLog">
+           
+            <div>
+                <img src="image\Welcome.png" id="Shoop" alt="LOgo"
+            </div>
+            
+    </nav>
+    
+       
+
+    <header class="header">
+        <div class="container">
+            <h3>Fitness Products</h3>
+            <p>Available Category's </p>
+        </div>
+    </header>
+
+
+    <section class="tech-section">
+        <div class="container">
+            <div class="tech-products">
+                <img src="image/Fit/Fit1.jpg" alt="image">
+                <h5>Kore PVC 10-40 Kg Home Gym Set<br><h1>Price:2500</h1></h5>
+                <p>Kore PVC Home Gym Set with One 3 ft curl Rod
+                </p>
+                <a href="order.php?product='Kore PVC 10-40 Kg Home Gym Set '&Price=2500" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fit/Fit2.jpg" alt="image">
+                <h5>BULLAR Home Gym Set,Home Gym Equipments For Men<br><h1>Price:6575</h1></h5>
+                <p>Home Gym Kit with 30Kg Iron Plates 30mm</p>
+                <a href="order.php?product='BULLAR Home Gym Set,Home Gym Equipments For Men'&Price=6575" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fit/Fit3.jpg" alt="image">
+                <h5>PRO365 Tummy Trimmer Exerciser<br><h1>Price:499</h1></h5>
+                <p>Flat Pedal For Extra Support</p>
+                <a href="order.php?product='PRO365 Tummy Trimmer Exerciser'&Price=499" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fit/Fit4.jpg" alt="image">
+                <h5>PRO365 Home Gym 4 Wheel Pro Advance Wheel Roller<br><h1>Price:499</h1></h5>
+                <p>Abdominal Fitness Trainer</p>
+                <a href="order.php?product='PRO365 Home Gym 4 Wheel Pro Advance Wheel Roller'&Price=499" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fit/Fit5.jpg" alt="image">
+                <h5>Symactive Rubber Coated 10Kg Hex Dumbbells set<br><h1>Price:1489</h1></h5>
+                <p>Fill Body Workout (Set of 2,5 Kg Camouflage)</p>
+                <a href="order.php?product='Symactive Rubber Coated 10Kg Hex Dumbbells set'&Price=1489" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fit/Fit6.jpg" alt="image">
+                <h5>Symactive Heavy Duty 3 in 1 Adjustable Bench<br><h1>Price:13599</h1></h5>
+                <p>Symactive Heavy Duty 3 in 1 Adjustable incline Multipurpose Gym Bench</p>
+                <a href="order.php?product='Symactive Heavy Duty 3 in 1 Adjustable Bench'&Price=13599" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fit/Fit7.jpg" alt="image">
+                <h5>Fitness Mantra 10KG to 60KG Weight Adjustable<br><h1>Price:150</h1></h5>
+                <p>Fitness Mantra 10KG to 60KG Weight Adjustable Arm Worker</p>
+                <a href="order.php?product='Fitness Mantra 10KG to 60KG Weight Adjustable'&Price=150" class="order-button">Order Now</a>
+            </div>
+
+            <div class="tech-products">
+                <img src="image/Fit/Fit8.jpg" alt="image">
+                <h5>PowerMax Fitness TD-A1 Motorised Foldable Treadmill<br><h1>Price:29999</h1></h5>
+                <p>PowerMax Fitness TD-A1 Motorised Foldable Treadmill</p>
+                <a href="order.php?product='PowerMax Fitness TD-A1 Motorised Foldable Treadmill'&Price=29999" class="order-button">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        &copy; 2024 AClux.shop</p>
+    </footer>
+
+</body>
+
+</html>
